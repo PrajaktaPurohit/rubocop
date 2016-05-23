@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.email = 'rubocop@googlegroups.com'
   s.files = `git ls-files assets bin config lib LICENSE.txt README.md \
-             spec/support/cop_helper.rb`
+             spec/support/cop_helper.rb Gemfile rubocop.gemspec`
             .split($RS)
   s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.extra_rdoc_files = ['LICENSE.txt', 'README.md']
